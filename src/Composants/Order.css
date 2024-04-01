@@ -1,0 +1,122 @@
+.enteteOrder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #0d0d82;
+    padding: 0 10px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.modal-close {
+    display: inline-block;
+    border: 0;
+    background-color: rgba(235,235,255,0.9);
+    color: black;
+    font-size: 16px;
+    border-radius: 100%;
+    font-weight: 900;
+    
+}
+
+.FORM {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    gap: 10px;
+}
+
+.inputOrder {
+    background-color: white;
+    border: 0;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.inputOrder:focus {
+    outline: none;
+}
+
+.btn-order {
+    font-size: 16px;
+    background-color: #0d0d82;
+    color: #FFFAFA;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0.5px 0 #ab4b0f;
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.FERMETURE {
+    margin-bottom: 5px;
+    font-size: 12px;
+    background-color: #FF0000;
+    color: #FFFAFA;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0.5px 0 #ab4b0f;
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.i-va {
+    margin-right: 10px;
+}
+
+.Ordertete {
+    background-color: #FF8C00;
+    color: white;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+}
+
+.CMDBODY {
+    background-color: rgba(200,200,255,0.9);
+}
+
+.orderGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 0;
+    font-size: 14px;
+}
+
+.orderpaty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px;
+    font-size: 12px;
+}
+
+.orderGroup, .orderpaty {
+  line-height: 0;
+  text-transform: uppercase;
+}
+
+
+.orderTotal {
+    border-top: 2px solid rgba(135,135,255,0.9);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.tricherOrder {
+    text-align: center;
+}

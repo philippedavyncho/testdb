@@ -1,0 +1,37 @@
+.foocont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.apple{
+    padding: 10px;
+}
+
+.windows{
+    padding: 10px;
+}
+
+.faFacebookF{
+    padding: 10px;
+}
+
+.faYoutube{
+    padding: 10px;
+}
+
+.faInstagram {
+    padding: 10px;
+}
+
+.faTwitter{
+    padding: 10px;
+}
+
+@media screen and (min-width:960px){
+    .foocont{
+        justify-content: start;
+        margin-left: 20px;
+    }
+}

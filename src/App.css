@@ -1,0 +1,80 @@
+.App{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "anime"
+        "nav"
+        "header"
+        "section"
+        "footer"
+    ;
+    grid-gap: 10px;
+    background-color: rgba(235,235,255,0.9);
+    box-sizing: border-box;
+    font-family: Georgia;
+
+}
+
+
+.Anime{
+    grid-area: anime;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(235,235,255,0.9);
+    grid-area: nav;
+    z-index: 1;
+}
+
+header {
+    background-color: rgba(235,235,255,0.9);
+    grid-area: header;
+}
+
+section {
+    background-color: rgba(235,235,255,0.9);
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+    z-index: 2;
+}
+
+
+@media screen and (min-width:960px){
+    .App{
+        grid-template-columns: 150px 3fr;
+        grid-template-areas:
+            "anime anime"
+            "header header"
+            "nav section"
+            "footer footer"
+        ;
+        background-color: #D3D3D3;
+    }
+    .search {
+        display: none;
+    }
+    
+    nav {
+        background-color: #D3D3D3;
+    }
+    
+    header {
+        background-color: #D3D3D3;
+    }
+    
+    section {
+        background-color: #D3D3D3;
+    }
+
+    
+   
+    
+}

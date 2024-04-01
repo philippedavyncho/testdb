@@ -1,0 +1,38 @@
+.containerFooter{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "footerHead"
+        "footerBody"
+        "footerEnd"
+    ;
+}
+
+.footerHead{
+    grid-area: footerHead;
+    background-color: #0d0d82;
+}
+
+
+.footerBody{
+    grid-area: footerBody;
+    display: none;
+}
+
+
+.footerEnd {
+    display: inline-block;
+    height: 100px;
+    grid-area: footerEnd;
+    background-color: #03001C;
+}
+
+@media screen and (min-width:960px){
+    .footerBody{
+        display: block; 
+    }
+    .footerEnd {
+        display: none;
+    }
+}
+

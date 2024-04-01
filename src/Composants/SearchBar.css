@@ -1,0 +1,24 @@
+.recherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+.rech{
+    border: 0;
+    width: 80%;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.rech:focus {
+    outline: none;
+}
+
+@media screen and (min-width:960px){
+    .recherche{
+        display: none;
+    }
+}

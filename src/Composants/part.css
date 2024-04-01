@@ -1,0 +1,180 @@
+.Part {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF8C00;
+    position: relative;
+    
+
+}
+
+.Cycleright {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #FF0000;
+    border-radius: 100%;
+    position: relative;
+    animation: monanim;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+}
+
+.Cycleright p {
+    font-size: 6px;
+    text-align: center;
+    color: #FFFAFA;
+    font-weight: bolder;
+}
+
+.Cycleright span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFAFA;
+}
+
+.milieu p {
+    position: absolute;
+    top: -5px;
+    left: 100px;
+    font-weight: bold;
+    color: #FFFAFA;
+    animation: milieuAnime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    
+}
+
+.Texteleft p {
+    font-size: 10px;
+    color: #FFFAFA;
+    position: absolute;
+    top: 20px;
+    animation: leftAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.partGrand {
+    display: none;
+}
+
+
+@keyframes monanim {
+    
+    0% {
+        overflow: hidden;
+        right: -50px;
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+        right: 120px;
+    }
+
+}
+
+@keyframes milieuAnime {
+ 
+  0%{
+      transform: translateY(-50px);
+  }
+  
+  50% {
+      transform: translateY(0);
+  }
+  
+  100%{
+      transform: scale(0);
+  }
+}
+
+
+@keyframes leftAnim {
+    
+    0%{
+        transform: translateX(-50px);
+    }
+    
+    50%{
+        transform: translateX(50px);
+    }
+    
+    100% {
+        transform: scale(0);
+    }
+}
+
+@media screen and (min-width:960px){
+    
+    .partGrand{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #0d0d82;
+        color: white;
+    }
+    
+    .Part {
+        display: none;
+    }
+    
+    .bigSearch {
+        border-radius: 0;
+        border: 0;
+        padding: 5px;
+        width: 500px;
+        height: 40px;
+    }
+    .bigSearch:focus {
+        outline: none;
+    }
+    
+    .submit{
+        border:0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        background-color: red;
+        color: white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 5px;
+        height: 40px;
+    }
+    
+    .nomGrand{
+        color: white;
+        font-weight: 900;
+        font-size: 24px;
+    }
+    
+    .grop {
+        color: white;
+        font-size: 24px;
+        font-weight: 900;
+    }
+    
+    .panierGrand{
+        position: relative;
+    }
+    
+    .panierGrand span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        color: white;
+        border-radius: 100%;
+        text-align: center;
+        position: absolute;
+        top: -12px;
+        right: -4px;
+    }
+    
+}

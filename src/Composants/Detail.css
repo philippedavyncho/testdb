@@ -1,0 +1,85 @@
+.detailCont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "detailNom"
+        "detailImg"
+        "detailPrix"
+        "detailDesc"
+    ;
+    color: #0d0d82;
+    font-family: Georgia;
+}
+
+.detailImg {
+    grid-area: detailImg;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+
+.detailNom {
+    grid-area: detailNom;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0 20px 10px;
+    padding: 10px 0 ;
+    font-weight: 900;
+}
+
+.detailPrix {
+    grid-area: detailPrix;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px 10px;
+    gap: 10px;
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: bold;
+    
+}
+
+.detailDesc {
+    grid-area: detailDesc;
+    margin: 0 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.Addshop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d82;
+    margin: 10px 20px;
+    display: inline-block;
+    font-size: 14px;
+    color: #FFFAFA;
+    border-radius: 5px;
+    box-shadow: 0 0.5px 0 #ab4b0f;
+    text-align: center; 
+}
+
+.Addshop:active {
+    box-shadow: none;
+    position: relative;
+    top: 0.5px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}

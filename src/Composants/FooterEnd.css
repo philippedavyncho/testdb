@@ -1,0 +1,20 @@
+.end {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    color: white;
+    font-size: 10px;
+}
+.END {
+    border-bottom: 1px solid white;
+}
+
+.YATTE {
+    border-bottom: 1px solid white;
+}
+
+@media screen and (min-width:960px){
+    .end {
+        display: none;
+    }
+}
