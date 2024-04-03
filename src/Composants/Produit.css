@@ -89,7 +89,8 @@
 .legende {
     font-size: 10px;
     text-transform: uppercase;
-    color: black;
+    color: #0d0d82;
+    font-weight: 900;
 }
 
 .imgcontainer{
