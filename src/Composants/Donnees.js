@@ -5,8 +5,7 @@ import SearchBar from "./SearchBar"
 import {useState, useEffect, useContext} from 'react'
 import axios from "axios"
 import {CategoryContext} from "./CategoryContext"
-import { Suspense } from 'react';
-import Loading from "./Loading"
+
 
 
 export default function Donnees(){
@@ -53,7 +52,7 @@ export default function Donnees(){
             <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
             <div className="Donnees">
                 {currentData.map((item) => {
-                return <Suspense fallback={<Loading />}><Produit key={item.id} {...item} item={item} /></Suspense>;
+                return <Produit key={item.id} {...item} item={item} />;
               })}
             </div>
             <div>
