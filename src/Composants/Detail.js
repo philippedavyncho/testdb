@@ -24,7 +24,7 @@ export default function Detail (){
 
     useEffect(()=>{
         const fetchdata = async()=>{
-            const result = await axios('http://localhost:8000/api/produits/')
+            const result = await axios('/.netlify/functions/produits')
             setData(result.data)
         }
 
