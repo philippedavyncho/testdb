@@ -99,6 +99,9 @@ export default function Order({closeModal}){
         
         localStorage.setItem('orderSuccess', 'true');
         
+        localStorage.setItem("orderName", nom);
+
+        
     }
     
     

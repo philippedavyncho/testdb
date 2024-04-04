@@ -82,6 +82,16 @@ function formatAmountWithSeparators(amount) {
 const PdfDocument = () => {
     
     
+    const [orderName, setOrderName] = useState("");
+    
+    useEffect(() => {
+    // Récupère le nom de la commande depuis le localStorage
+    const storedOrderName = localStorage.getItem("orderName");
+    if (storedOrderName) {
+      setOrderName(storedOrderName);
+    }
+  }, []);
+    
     
   // Utilise useState pour stocker les items du localStorage
   const [savedItems, setSavedItems] = useState([]);
@@ -105,7 +115,7 @@ return (
       <Page style={styles.page}>
         <View>
           <Text style={styles.title}>YATTE</Text>
-          <Text style={styles.commande}>Commande </Text>
+          <Text style={styles.commande}>Commande de {orderName}</Text>
           {savedItems.map((item) => (
             <View style={styles.itemContainer} key={item.id}>
             <View style={styles.textContainer}>
