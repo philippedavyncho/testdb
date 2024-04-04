@@ -79,7 +79,7 @@ function formatAmountWithSeparators(amount) {
 
 
 
-const PdfDocument = () => {
+const PdfDocument = ({handlePdfDownload}) => {
     
     
     const [orderName, setOrderName] = useState("");
@@ -107,6 +107,11 @@ const PdfDocument = () => {
     const totalAmount = savedItems.reduce((total, item) => total + item.price, 0);
     
     const totalLivraison = savedItems.reduce((som,item)=>som + item.prix_livraison*item.quantity, 0)
+    
+    // Après le téléchargement réussi du PDF
+  const handleDownloadSuccess = () => {
+    handlePdfDownload(); // Appel de la fonction de rappel
+  };
     
 
 
