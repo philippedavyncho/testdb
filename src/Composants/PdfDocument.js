@@ -111,7 +111,7 @@ const PdfDocument = ({handlePdfDownload}) => {
     // Après le téléchargement réussi du PDF
   useEffect(() => {
     handlePdfDownload(); // Appel de la fonction de rappel
-  }, []);
+  }, [handlePdfDownload]);
     
 
 

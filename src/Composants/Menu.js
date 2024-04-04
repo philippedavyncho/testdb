@@ -23,10 +23,10 @@ import PdfDocument from './PdfDocument';
 export default function Menu(){
     
     
-    const handlePdfDownload = () => {
+    const handlePdfDownload = useCallback(() => {
   setOrderSuccess(false);
   localStorage.setItem('orderSuccess', 'false');
-};
+}, [setOrderSuccess]);
 
 
     
