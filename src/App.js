@@ -22,7 +22,6 @@ export default function App(){
     
     return (
         <>
-        <ClientNameProvider>
         <CartProvider>
         <ToastContainer />
         <div className="App">
@@ -34,7 +33,9 @@ export default function App(){
             </header>
             <nav>
                 <OrderProvider>
+                <ClientNameProvider>
                   <Menu />
+                </ClientNameProvider>
                 </OrderProvider>
             </nav>
             
@@ -49,7 +50,6 @@ export default function App(){
             </footer>
         </div>
         </CartProvider>
-        </ClientNameProvider>
         </>
     )
 }
