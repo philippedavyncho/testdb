@@ -109,9 +109,9 @@ const PdfDocument = ({handlePdfDownload}) => {
     const totalLivraison = savedItems.reduce((som,item)=>som + item.prix_livraison*item.quantity, 0)
     
     // Après le téléchargement réussi du PDF
-  const handleDownloadSuccess = () => {
+  useEffect(() => {
     handlePdfDownload(); // Appel de la fonction de rappel
-  };
+  }, []);
     
 
 
