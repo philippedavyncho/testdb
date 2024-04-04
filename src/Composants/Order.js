@@ -77,9 +77,7 @@ export default function Order({closeModal}){
             });
         }
         
-        toast.success("Veuillez telecharger votre bon de commande dans le menu. Merci!",  { autoClose: 6000,
-        className:"toast-success"
-        }) ;
+        toast.success("Veuillez telecharger votre bon de commande dans le menu. Merci!",  { autoClose: 6000}) ;
         
         setNom("")
         setPhone("")
