@@ -15,7 +15,7 @@ import {Routes,Route} from "react-router-dom"
 import { OrderProvider } from './Composants/OrderContext';
 
 import Detail from "./Composants/Detail";
-import {ClientNameProvider} from "./Composants/NomContext"
+
 
 
 export default function App(){
@@ -33,9 +33,7 @@ export default function App(){
             </header>
             <nav>
                 <OrderProvider>
-                <ClientNameProvider>
                   <Menu />
-                </ClientNameProvider>
                 </OrderProvider>
             </nav>
             
