@@ -15,12 +15,14 @@ import {Routes,Route} from "react-router-dom"
 import { OrderProvider } from './Composants/OrderContext';
 
 import Detail from "./Composants/Detail";
+import {ClientNameProvider} from "./Composants/NomContext"
 
 
 export default function App(){
     
     return (
         <>
+        <ClientNameProvider>
         <CartProvider>
         <ToastContainer />
         <div className="App">
@@ -47,6 +49,7 @@ export default function App(){
             </footer>
         </div>
         </CartProvider>
+        </ClientNameProvider>
         </>
     )
 }

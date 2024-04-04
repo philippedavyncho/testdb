@@ -16,6 +16,8 @@ import { useOrderContext } from './OrderContext';
 
 import './Order.css'
 
+import { useClientName } from "./NomContext"
+
 
 function formatAmountWithSeparators(amount) {
   return amount.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -25,6 +27,7 @@ function formatAmountWithSeparators(amount) {
 export default function Order({closeModal}){
     
         //state (état ou données)
+    const { setClientName } = useClientName();
     
     const [nom, setNom] = useState("")
     const [phone, setPhone] = useState(null)
@@ -44,7 +47,8 @@ export default function Order({closeModal}){
     //comportements
     
     const handleSubmit = (e)=>{
-        e.preventDefault()
+        e.preventDefault();
+        setClientName(nom);
         
         
         for(let i=0 ; i<items.length; i++){

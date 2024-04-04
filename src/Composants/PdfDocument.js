@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Page, Document, StyleSheet, Text, View, Image } from '@react-pdf/renderer'; 
 
+import { useClientName } from "./NomContext"
+
 
 const styles = StyleSheet.create({
   page: {
@@ -81,6 +83,8 @@ function formatAmountWithSeparators(amount) {
 const PdfDocument = () => {
     
     
+  const { clientName } = useClientName();
+    
   // Utilise useState pour stocker les items du localStorage
   const [savedItems, setSavedItems] = useState([]);
     
@@ -103,7 +107,7 @@ return (
       <Page style={styles.page}>
         <View>
           <Text style={styles.title}>YATTE</Text>
-          <Text style={styles.commande}>Commande</Text>
+          <Text style={styles.commande}>Commande de {clientName}</Text>
           {savedItems.map((item) => (
             <View style={styles.itemContainer} key={item.id}>
             <View style={styles.textContainer}>
