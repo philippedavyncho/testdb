@@ -23,13 +23,6 @@ import PdfDocument from './PdfDocument';
 export default function Menu(){
     
     
-    const handlePdfDownload = useCallback(() => {
-  setOrderSuccess(false);
-  localStorage.setItem('orderSuccess', 'false');
-}, [setOrderSuccess]);
-
-
-    
     //changer le bouton
     
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,6 +56,8 @@ export default function Menu(){
     
     
     
+    
+    
     useEffect(()=>{
         const fetchdata = async()=>{
             const result = await axios('/.netlify/functions/categories')
@@ -78,6 +73,12 @@ export default function Menu(){
         setSelectedCategory(nom)
         
     }
+    
+    
+    const handlePdfDownload = useCallback(() => {
+  setOrderSuccess(false);
+  localStorage.setItem('orderSuccess', 'false');
+}, [setOrderSuccess]);
     
     return(
         <>
