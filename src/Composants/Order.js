@@ -16,7 +16,7 @@ import { useOrderContext } from './OrderContext';
 
 import './Order.css'
 
-import { useClientName } from "./NomContext"
+
 
 
 function formatAmountWithSeparators(amount) {
@@ -27,7 +27,6 @@ function formatAmountWithSeparators(amount) {
 export default function Order({closeModal}){
     
         //state (état ou données)
-    const { setClientName } = useClientName();
     
     const [nom, setNom] = useState("")
     const [phone, setPhone] = useState(null)
