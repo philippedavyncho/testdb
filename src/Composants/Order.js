@@ -47,7 +47,6 @@ export default function Order({closeModal}){
     
     const handleSubmit = (e)=>{
         e.preventDefault();
-        setClientName(nom);
         
         
         for(let i=0 ; i<items.length; i++){
