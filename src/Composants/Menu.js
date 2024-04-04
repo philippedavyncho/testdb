@@ -6,7 +6,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 import {CategoryContext} from "./CategoryContext"
 
-import {useState, useEffect, useContext} from 'react'
+import {useState, useEffect, useContext, useCallback} from 'react'
 import axios from "axios"
 import {useCart} from "react-use-cart"
 
