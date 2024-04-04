@@ -120,3 +120,8 @@
 .tricherOrder {
     text-align: center;
 }
+
+.toast-success {
+    background-color: #00ff00;
+    color: #fff;
+}
