@@ -22,6 +22,13 @@ import PdfDocument from './PdfDocument';
 
 export default function Menu(){
     
+    
+    const handlePdfDownload = () => {
+  setOrderSuccess(false);
+  localStorage.setItem('orderSuccess', 'false');
+};
+
+    
     //changer le bouton
     
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -103,7 +110,7 @@ export default function Menu(){
                   {orderSuccess && (
                     <>
                         
-                    <PDFDownloadLink document={<PdfDocument />} fileName="bon_commande.pdf" className="Recu">
+                    <PDFDownloadLink document={<PdfDocument handlePdfDownload={handlePdfDownload} />} fileName="bon_commande.pdf" className="Recu">
                           {({ blob, url, loading, error }) =>
                             loading ? 'Chargement...' : 'Télécharger'
                           }
