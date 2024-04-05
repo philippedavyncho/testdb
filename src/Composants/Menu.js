@@ -63,7 +63,7 @@ export default function Menu(){
     
 
     // Clear the timer on component unmount
-    return () => clearTimeout(timer);
+    //return () => clearTimeout(timer);
         
     }, [orderSuccess, setOrderSuccess]);
     
