@@ -80,6 +80,13 @@ export default function Menu(){
     
     
     
+    const handlePdfDownload = () => {
+  setOrderSuccess(false);
+  localStorage.setItem('orderSuccess', 'false');
+};
+    
+    
+    
     
     return(
         <>
@@ -113,7 +120,9 @@ export default function Menu(){
                   {orderSuccess && (
                     <>
                         
-                    <PDFDownloadLink document={<PdfDocument />} fileName="bon_commande.pdf" className="Recu">
+                    <PDFDownloadLink document={<PdfDocument />} fileName="bon_commande.pdf" className="Recu"
+                    onClick={handlePdfDownload}
+                    >
                           {({ blob, url, loading, error }) =>
                             loading ? 'Chargement...' : 'Télécharger'
                           }
