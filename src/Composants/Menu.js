@@ -112,16 +112,13 @@ export default function Menu(){
                    
                   {orderSuccess && (
                     <>
-                        <div onClick={()=>{
-                           setOrderSuccess(false);
-                  localStorage.setItem('orderSuccess', 'false'); 
-                        }}>
+                        
                     <PDFDownloadLink document={<PdfDocument />} fileName="bon_commande.pdf" className="Recu">
                           {({ blob, url, loading, error }) =>
                             loading ? 'Chargement...' : 'Télécharger'
                           }
                         </PDFDownloadLink>
-                        </div>
+                        
                     </>
                   )}
                 </div>
