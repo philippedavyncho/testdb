@@ -6,7 +6,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 import {CategoryContext} from "./CategoryContext"
 
-import {useState, useEffect, useContext, useCallback} from 'react'
+import {useState, useEffect, useContext} from 'react'
 import axios from "axios"
 import {useCart} from "react-use-cart"
 
@@ -21,7 +21,6 @@ import PdfDocument from './PdfDocument';
 
 
 export default function Menu(){
-    
     
     //changer le bouton
     
@@ -48,6 +47,9 @@ export default function Menu(){
       setOrderSuccess(false);
       localStorage.setItem('orderSuccess', 'false');
     }, 6 * 60 * 1000);
+    
+    
+    
 
     // Clear the timer on component unmount
     return () => clearTimeout(timer);
@@ -75,10 +77,7 @@ export default function Menu(){
     }
     
     
-    const handlePdfDownload = useCallback(() => {
-  setOrderSuccess(false);
-  localStorage.setItem('orderSuccess', 'false');
-}, [setOrderSuccess]);
+    
     
     return(
         <>
@@ -112,7 +111,7 @@ export default function Menu(){
                   {orderSuccess && (
                     <>
                         
-                    <PDFDownloadLink document={<PdfDocument handlePdfDownload={handlePdfDownload} />} fileName="bon_commande.pdf" className="Recu">
+                    <PDFDownloadLink document={<PdfDocument />} fileName="bon_commande.pdf" className="Recu">
                           {({ blob, url, loading, error }) =>
                             loading ? 'Chargement...' : 'Télécharger'
                           }
