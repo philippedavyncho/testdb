@@ -22,7 +22,7 @@ import PdfDocument from './PdfDocument';
 
 export default function Menu(){
     
-    const [downloaded, setDownloaded] = useState(false);
+    
     
     //changer le bouton
     
@@ -45,25 +45,16 @@ export default function Menu(){
         setOrderSuccess(orderSuccessFromLocalStorage === 'true');
         
         // Set orderSuccess to false after 3 minutes
-    /*const timer = setTimeout(() => {
-      setOrderSuccess(false);
-      localStorage.setItem('orderSuccess', 'false');
-    }, 6 * 60 * 1000);*/
-    
-    if(downloaded){
-        setOrderSuccess(false);
-      localStorage.setItem('orderSuccess', 'false');
-        
-    }else{
-        setTimeout(() => {
+    const timer = setTimeout(() => {
       setOrderSuccess(false);
       localStorage.setItem('orderSuccess', 'false');
     }, 6 * 60 * 1000);
-    }
+    
+    
     
 
     // Clear the timer on component unmount
-    //return () => clearTimeout(timer);
+    return () => clearTimeout(timer);
         
     }, [orderSuccess, setOrderSuccess]);
     
@@ -122,9 +113,7 @@ export default function Menu(){
                   {orderSuccess && (
                     <>
                         
-                    <PDFDownloadLink document={<PdfDocument />} fileName="bon_commande.pdf" className="Recu"
-                    onComplete={() => setDownloaded(true)}
-                    >
+                    <PDFDownloadLink document={<PdfDocument />} fileName="bon_commande.pdf" className="Recu">
                           {({ blob, url, loading, error }) =>
                             loading ? 'Chargement...' : 'Télécharger'
                           }
