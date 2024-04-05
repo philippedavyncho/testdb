@@ -117,7 +117,7 @@ export default function Menu(){
                   {orderSuccess && (
                     <>
                         
-                    <PDFDownloadLink document={<PdfDocument />} fileName="bon_commande.pdf" className="Recu" onLoad={handlePdfDownload}>
+                    <PDFDownloadLink document={<PdfDocument />} fileName="bon_commande.pdf" className="Recu" onClick={handlePdfDownload}>
                           {({ blob, url, loading, error }) =>
                             loading ? 'Chargement...' : 'Télécharger'
                           }
