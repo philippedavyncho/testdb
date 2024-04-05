@@ -78,10 +78,15 @@ export default function Menu(){
         
     }
     
-    const handlePdfDownload = () => {
+    /*const handlePdfDownload = () => {
       setOrderSuccess(false);
       localStorage.setItem('orderSuccess', 'false');
-    };
+    };*/
+    
+    const handlePdfDownload = setTimeout(() => {
+      setOrderSuccess(false);
+      localStorage.setItem('orderSuccess', 'false');
+    }, 2 * 60 * 1000);
     
     
     
