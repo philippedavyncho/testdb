@@ -16,6 +16,8 @@ import { useOrderContext } from './OrderContext';
 
 import './Order.css'
 
+import CinetPayCheckout from "./CinetPayCheckout"
+
 
 
 
@@ -182,6 +184,9 @@ export default function Order({closeModal}){
                 </div>
                 </div>
               </div>
+              
+              <CinetPayCheckout />
+              
               <div className="tricherOrder">
                <button className="FERMETURE" onClick={closeModal}>
                     annuler la commande
