@@ -1,7 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const CinetPayCheckout = () => {
     const [isPaymentSuccess, setIsPaymentSuccess] = useState(false);
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.cinetpay.com/seamless/main.js';
+        script.async = true;
+
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
 
     const checkout = () => {
         const transactionId = Math.floor(Math.random() * 100000000).toString();
