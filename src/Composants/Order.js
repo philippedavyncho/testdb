@@ -16,6 +16,8 @@ import { useOrderContext } from './OrderContext';
 
 import './Order.css'
 
+import PaymentSDK from "./PaymentSDK"
+
 
 
 
@@ -187,6 +189,7 @@ export default function Order({closeModal}){
                <button className="FERMETURE" onClick={closeModal}>
                     annuler la commande
                </button>
+               <PaymentSDK />
               </div>
         </>
     )
