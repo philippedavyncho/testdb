@@ -25,14 +25,16 @@
     background-color: rgba(235,235,255,0.9);
     font-weight: bold;
     color: #0d0d82;
+    font-size: 14px;
 }
 
 
 
 @media screen and (min-width:960px){
     .Donnees {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
         margin: 20px 10px;
+        width: 1850px;
     }
 }
