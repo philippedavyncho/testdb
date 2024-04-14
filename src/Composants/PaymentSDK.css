@@ -1,8 +1,15 @@
 
 .paymentImage {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .paymentImage img {
     width: 30px;
+}
+
+.btnCheck {
+    background-color: blue;
 }
