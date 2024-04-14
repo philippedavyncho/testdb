@@ -69,14 +69,13 @@ class PaymentSDK extends React.Component {
         return (
             <div className="sdk">
             <hr/>
+            <p>acheter via</p>
                 <div className="paymentImage">
-                    <p>acheter via</p>
-                    <img src={orange} alt={orange} />
-                    <img src={mtn} alt={mtn} />
-                    <img src={moov} alt={moov} />
-                    <img src={wave} alt={wave} />
+                    <img src={orange} alt={orange} onClick={this.handleCheckout} />
+                    <img src={mtn} alt={mtn} onClick={this.handleCheckout} />
+                    <img src={moov} alt={moov} onClick={this.handleCheckout} />
+                    <img src={wave} alt={wave} onClick={this.handleCheckout} />
                 </div>
-                <div onClick={this.handleCheckout} className="btnCheck">Checkout</div>
             </div>
         );
     }
