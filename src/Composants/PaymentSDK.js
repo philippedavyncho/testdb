@@ -1,5 +1,14 @@
 import React from 'react';
 
+import orange from "../orange.png"
+
+import moov from "../moov.png"
+
+import mtn from "../mtn.png"
+
+import wave from "../wave.png"
+
+
 class PaymentSDK extends React.Component {
     componentDidMount() {
         const script = document.createElement("script");
@@ -57,7 +66,13 @@ class PaymentSDK extends React.Component {
     render() {
         return (
             <div className="sdk">
-                <h1>SDK SEAMLESS</h1>
+                <p>acheter via</p>
+                <div className="paymentImage">
+                    <img src={orange} alt={orange} />
+                    <img src={mtn} alt={mtn} />
+                    <img src={moov} alt={moov} />
+                    <img src={wave} alt={wave} />
+                </div>
                 <button onClick={this.handleCheckout}>Checkout</button>
             </div>
         );
