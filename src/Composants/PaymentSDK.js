@@ -8,6 +8,8 @@ import mtn from "../mtn.png"
 
 import wave from "../wave.png"
 
+import "./PaymentSDK.css"
+
 
 class PaymentSDK extends React.Component {
     componentDidMount() {

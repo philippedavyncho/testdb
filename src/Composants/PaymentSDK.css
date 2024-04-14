@@ -1,0 +1,8 @@
+
+.paymentImage {
+    display: flex;
+}
+
+.paymentImage img {
+    width: 30px;
+}
