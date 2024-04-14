@@ -1,6 +1,13 @@
+.sdk {
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
 .paymentImage {
     display: flex;
-    align-items: center;
+    align-items: space-around;
     justify-content: center;
     gap: 5px;
 }
