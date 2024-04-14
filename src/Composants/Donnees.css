@@ -35,6 +35,6 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 5px;
         margin: 20px 10px;
-        width: 1080px;
+        width: 850px;
     }
 }
