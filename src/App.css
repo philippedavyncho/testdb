@@ -63,7 +63,8 @@ footer {
     }
     
     nav {
-        background-color: #D3D3D3;
+        background-color: rgba(235,235,255,0.9);
+        margin-right: 20px;
     }
     
     header {
