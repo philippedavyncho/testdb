@@ -65,14 +65,15 @@ footer {
     nav {
         background-color: rgba(235,235,255,0.9);
         margin-right: 20px;
+        padding: 0 20px 0 10px;
     }
     
     header {
-        background-color: #D3D3D3;
+        background-color: rgba(235,235,255,0.9);
     }
     
     section {
-        background-color: #D3D3D3;
+        background-color: rgba(235,235,255,0.9);
     }
 
     
