@@ -33,7 +33,7 @@
 @media screen and (min-width:960px){
     .Donnees {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 5px;
+        grid-gap: 10px;
         margin: 20px 10px;
         width: 700px;
     }
