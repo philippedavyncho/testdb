@@ -46,6 +46,13 @@ footer {
     z-index: 2;
 }
 
+.centerApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media screen and (min-width:960px){
     .App{
@@ -77,13 +84,4 @@ footer {
     section {
         background-color: rgba(235,235,255,0.9);
     }
-    
-    nav, section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-   
-    
 }

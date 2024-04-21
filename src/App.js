@@ -24,7 +24,7 @@ export default function App(){
         <>
         <CartProvider>
         <ToastContainer />
-        <div className="App">
+        <div className="App centerApp">
             <div className="Anime">
                 <Part />
             </div>
