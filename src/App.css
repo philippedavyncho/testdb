@@ -49,7 +49,7 @@ footer {
 
 @media screen and (min-width:960px){
     .App{
-        grid-template-columns: 350px 1fr 1fr;
+        grid-template-columns: 300px 1fr 1fr;
         grid-template-areas:
             "anime anime anime"
             "header header header"
@@ -58,6 +58,7 @@ footer {
         ;
         background-color:rgba(235,235,255,0.9);
         box-sizing: border-box;
+        text-align: center;
     }
     .search {
         display: none;
@@ -67,7 +68,7 @@ footer {
         background-color: #0d0d82;
         margin: 20px;
         padding:  20px;
-        height:300px;
+        height:900px;
     }
     
     header {
