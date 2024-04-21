@@ -58,7 +58,6 @@ footer {
         ;
         background-color:rgba(235,235,255,0.9);
         box-sizing: border-box;
-        text-align: center;
     }
     .search {
         display: none;
@@ -79,7 +78,9 @@ footer {
         background-color: rgba(235,235,255,0.9);
     }
 
-    
+    .navSect {
+        text-align: center;
+    }
    
     
 }
