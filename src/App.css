@@ -77,6 +77,12 @@ footer {
     section {
         background-color: rgba(235,235,255,0.9);
     }
+    
+    nav, section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
    
     
