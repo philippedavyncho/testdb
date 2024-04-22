@@ -66,8 +66,7 @@ footer {
     nav {
         /*background-color: #0d0d82;*/
         margin: 20px;
-        padding:  20px;
-        height:450px;
+        padding:  0 20px 20px 20px;
         margin-bottom: 20px;
         background-color: rgba(205,205,255,0.9);
         
