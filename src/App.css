@@ -56,7 +56,7 @@ footer {
             "nav section section"
             "footer footer footer"
         ;
-        background-color:rgba(235,235,255,0.9);
+        background-color:rgba(205,205,255,0.9);
         box-sizing: border-box;
     }
     .search {
@@ -74,10 +74,10 @@ footer {
     }
     
     header {
-        background-color: rgba(235,235,255,0.9);
+        background-color: rgba(205,205,255,0.9);
     }
     
     section {
-        background-color: rgba(235,235,255,0.9);
+        background-color: rgba(205,205,255,0.9);
     }
 }
