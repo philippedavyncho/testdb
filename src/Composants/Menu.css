@@ -185,15 +185,11 @@
     .grdEcran {
         display: block;
         text-align: center;
-        padding: 0 0 10px 0;
-        margin-left: 10px;
         color: white;
         width: 100%;
     }
     .grdEcran p {
-        margin: 5px 0 0 0;
         background-color: #FF8C00;
-        padding: 10px;
         border-radius: 5px;
     }
     
