@@ -64,11 +64,13 @@ footer {
     }
     
     nav {
-        background-color: #0d0d82;
+        /*background-color: #0d0d82;*/
         margin: 20px;
         padding:  20px;
-        height:auto;
-        margin-bottom: 50px;
+        height:450px;
+        margin-bottom: 20px;
+        background-color: rgba(205,205,255,0.9);
+        
     }
     
     header {
