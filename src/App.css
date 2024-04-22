@@ -65,9 +65,9 @@ footer {
     
     nav {
         background-color: #0d0d82;
-        margin: 20px;
+        margin: 10px;
         padding:  20px;
-        height:400px;
+        height:auto;
     }
     
     header {
