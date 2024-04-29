@@ -18,7 +18,11 @@
 }
 
 @media screen and (min-width:960px){
-    .recherche{
-        display: none;
+    .rech{
+        display: inline-block;
+        width: 40%;
+        margin-top: 10px;
+        padding: 8px;
+        height: 40px;
     }
 }
