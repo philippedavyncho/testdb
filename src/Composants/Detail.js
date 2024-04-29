@@ -38,31 +38,39 @@ export default function Detail (){
     return(
         <>
             {item && (
+                <>
                 <div className="detailCont">
+                    <div className="secondCont">
                     <div className="detailImg">
-                        <img src={item.image} alt={item.name} style={{width:"200px"}}/>
+                        <img src={item.image} alt={item.name} />
                     </div>
-                    <div className="detailNom">{item.name}</div>
+                    <div className="npbtn">
+                    <div className="detailNom"><h3>{item.name}</h3></div>
                     <div className="detailPrix">
-                    <div>{formatAmountWithSeparators(item.price)} FCFA</div>
+                    <h3>{formatAmountWithSeparators(item.price)} fcfa <span className="detaibarer">{formatAmountWithSeparators(item.pribarrer)} fcfa</span></h3>
                         <div 
                 className="Add"
                 onClick={() => {
                           addItem(item);
                           toast.info("Un article a été ajouter aux panier");
                         }}
-            >AJOUTER AU PANIER</div>
+            >AJOUTER AU PANIER</div></div>
                     </div>
                     <div className="detailDesc">
+                        <h3>fiche technique</h3>
                     <p>{item.description}</p>
                     </div>
+                    </div>
                     
+                </div>
+                <div className="Addcenter">
                     <div className="Addshop">
                     <Link to="/" className="link">
                         <p>continuer votre shopping</p>
                         </Link>
                     </div>
-                </div>
+                    </div>
+                </>
             )}
         </>
     )

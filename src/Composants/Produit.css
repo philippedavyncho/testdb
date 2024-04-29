@@ -15,6 +15,7 @@
 
 .card img {
     width: 100%;
+    cursor: pointer;
 }
 
 .card p {
@@ -38,7 +39,8 @@
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 0.5px 0 #ab4b0f;
-    text-align: center; 
+    text-align: center;
+     cursor: pointer; 
 }
 
 .Add:active {
@@ -52,6 +54,7 @@
     font-weight: 1000;
     font-size:18px;
     margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .livraison {
@@ -120,6 +123,7 @@
     text-decoration: line-through;
     color: #0d0d82;
     font-weight: 850;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (min-width:960px){
@@ -146,4 +150,15 @@
     margin: 0;
     padding: 0;
 }
+}
+
+
+@media screen and (min-width:960px){
+
+    .Add {
+        width: 230px;
+        height: 16px;
+        font-size: 14px;
+    }
+
 }

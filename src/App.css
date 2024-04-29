@@ -64,8 +64,9 @@ footer {
     }
     
     nav {
-        background-color: rgba(185,185,255,0.9);
-        margin: 20px;
+        background-color: rgba(205,205,255,0.9);
+        position: inherit;
+
         
     }
     

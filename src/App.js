@@ -16,6 +16,10 @@ import { OrderProvider } from './Composants/OrderContext';
 
 import Detail from "./Composants/Detail";
 
+import GrandMenu from "./Composants/GrandMenu"
+
+import GrandPanier from "./Composants/GandPanier"
+
 
 
 export default function App(){
@@ -24,29 +28,34 @@ export default function App(){
         <>
         <CartProvider>
         <ToastContainer />
+        <OrderProvider>
         <div className="App">
             <div className="Anime">
                 <Part />
+                
             </div>
             <header>
                 <Header />
+                <GrandMenu />
             </header>
             <nav>
-                <OrderProvider>
+                
                   <Menu />
-                </OrderProvider>
+                
             </nav>
             
             <section>
                 <Routes>
                     <Route path='/' element={<Donnees />}/>
                     <Route path='/:produitId' element={<Detail/>}/>
+                    <Route path="/panier" element={<GrandPanier/>}/>
                 </Routes>
             </section>
             <footer>
                 <Footer />
             </footer>
         </div>
+        </OrderProvider>
         </CartProvider>
         </>
     )

@@ -1,75 +1,81 @@
 .detailCont {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-        "detailNom"
-        "detailImg"
-        "detailPrix"
-        "detailDesc"
-    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #0d0d82;
     font-family: Georgia;
+    background-color: white;
+    margin: 20px 20px 10px;
+    
 }
 
 .detailImg {
-    grid-area: detailImg;
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
-    margin: 0 20px;
+    align-items: center;
+}
+
+.detailImg img {
+    width: 80%;
+    margin: 20px 0 30px;
 }
 
 
 .detailNom {
-    grid-area: detailNom;
-    background-color: white;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    margin: 0 20px 10px;
-    padding: 10px 0 ;
     font-weight: 900;
+    font-size: medium;
 }
 
+
 .detailPrix {
-    grid-area: detailPrix;
-    background-color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 10px 20px 10px;
-    gap: 10px;
     font-size: 18px;
-    padding-top: 20px;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
     
 }
 
+.detaibarer {
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
 .detailDesc {
-    grid-area: detailDesc;
-    margin: 0 20px;
+    margin: 20px;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     text-align: justify;
     text-transform: uppercase;
+    font-size: 12px;
+
+}
+
+.Addcenter{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .Addshop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     background-color: #0d0d82;
-    margin: 10px 20px;
+    margin: 5px 5px 10px;
     display: inline-block;
     font-size: 14px;
-    color: #FFFAFA;
+    color: white;
     border-radius: 5px;
-    box-shadow: 0 0.5px 0 #ab4b0f;
+    box-shadow: 0 0.5px 0 black;
     text-align: center; 
+    width: 200px;
+    font-size: 10px;
+    font-weight: 900;
 }
 
 .Addshop:active {
@@ -78,8 +84,67 @@
     top: 0.5px;
 }
 
+
 .link {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+}
+
+.secondCont{
+    display: block;
+}
+
+@media screen and (min-width:960px){
+    .detailCont{
+        display: block;
+    }
+
+    .secondCont{
+        display: flex;
+        justify-content:flex-start;
+        padding-right: 30px;
+    }
+
+    .detailNom{
+        margin-top: 20px;
+    }
+
+    .detailImg {
+        width: 460px;
+       
+    } 
+
+    .detailImg img {
+        width: 100%;
+        margin: 20px 0 30px;
+    }
+
+    .detailDesc {
+        text-align: justify;
+        text-transform: uppercase;
+        font-size: 16px;
+        border-left: 1px solid rgb(7, 0, 36); 
+        height: auto;
+        padding-left: 10px;
+    }
+
+    .Addshop {
+        font-size: 12px;
+        width: 250px;
+        cursor: pointer;
+    }
+
+    .npbtn{
+        border-left: 1px solid rgb(7, 0, 36); 
+        height: auto;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+  
+
+    
 }

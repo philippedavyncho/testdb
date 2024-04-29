@@ -1,0 +1,140 @@
+.cartcontainerdata{
+    display: none;
+}
+
+
+@media screen and (min-width:960px){
+    .cartcontainerdata{
+        display: block;
+        margin: 20px;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+    }
+
+    /*ajouter*/
+
+    /* Container principal */
+
+  
+  /* CartSold - Montant total */
+  .CartSolddata {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .CartSolddata p {
+    margin: 0;
+  }
+  
+  /* Conteneur de chaque élément du panier */
+  .carddata {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+   
+  }
+  
+  .cardBodydata {
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
+
+  .grBoutondata{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .cardBodydata img {
+    width: 30%;
+  }
+
+  .btnDeletedata{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: 0;
+    margin-right: 20px;
+    margin-top: 2px;
+    cursor: pointer;
+   
+  }
+
+  .btnPredata {
+    width: 30px;
+    height: 30px;
+    background-color: #FF8C00;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .btnDeudata{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #FF8C00;
+    border-bottom: 1px solid #FF8C00;
+    cursor: pointer;
+  }
+
+  .btnTrodata{
+    width: 30px;
+    height: 30px;
+    background-color: #FF8C00;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .Commanderdata{
+    display: inline-block;
+    background-color: #FF0000;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 120px;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+ .itemContainerdata{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+ }
+ .recomandProdata{
+  width: 250px;
+ }
+  .recordFinaldata{
+    width: 150px;
+  }
+
+  .Recommandata{
+    background-color: white;
+    padding: 20px;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+
+  .panierVidedata{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+  }
+}
